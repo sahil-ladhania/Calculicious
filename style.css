@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+}
+.jc-c{
+    justify-content: flex-start;
+}
+.ai-c{
+    align-items: center;
+}
+body {
+    background-color: #f0f0f0;
+    /* Background color of the whole page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.iphone-container {
+    width: 350px;
+    /* Set a fixed width for the iPhone container */
+    height: 700px;
+    /* Set a fixed height for the iPhone container */
+    background-color: #c0c0c0;
+    /* Color resembling iPhone 14 Pro */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: relative;
+    /* Set to relative for positioning the notch */
+}
+.notch {
+    width: 80px;
+    /* Width of the notch */
+    height: 30px;
+    /* Height of the notch */
+    background-color: black;
+    border-radius: 0 0 10px 10px;
+    /* Round the bottom corners to create the notch */
+    margin: 0 auto;
+    /* Center the notch */
+}
+.iphone-screen {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    /* Expand to fill the container height */
+    overflow: hidden;
+    /* Hide any content overflowing from the screen */
+}
+.calculator {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure the calculator fills the entire container */
+}
+#display {
+    width: 100%;
+    font-size: 36px; /* Increase font size for a bigger result field */
+    padding: 20px; /* Increase padding for better spacing */
+    margin-bottom: 0; /* Remove the margin-bottom to eliminate spacing between result and buttons */
+    border: none; /* Remove the border from the input field */
+    background-color: #fff; /* Set the background color of the input field */
+    border-top-left-radius: 15px; /* Round the top left corner to match the iPhone screen */
+    border-top-right-radius: 15px; /* Round the top right corner to match the iPhone screen */
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+    /* Keep the same styles for the buttons */
+    flex-grow: 1; /* Allow the buttons to fill the remaining space in the calculator */
+}
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.number {
+    background-color: #f0f0f0;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+.operator {
+    background-color: #d1d1d1;
+}
+.clear {
+    background-color: #f05a5a;
+}
+.dot {
+    background-color: #e0e0e0;
+}
+.percentage {
+    background-color: #e0e0e0;
+}
+.equals {
+    background-color: #85b6ff;
+}
