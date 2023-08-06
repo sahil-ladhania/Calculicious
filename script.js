@@ -28,6 +28,11 @@ const updateInputScreen = () => {
     inputScreen.value = inputString;
 }
 
+// Creating Function For Calculating Result.
+const calculateResult = () => {
+    
+}
+
 // Logic For Showing Input On Screen.
 seven.addEventListener('click' , () => {
     inputFeild.push(7);
