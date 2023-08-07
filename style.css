@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.logo{
+    margin-bottom: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #3f3f3f;
 }
 .flex{
     display: flex;
@@ -13,7 +26,8 @@
     align-items: center;
 }
 body {
-    background-color: #f0f0f0;
+    /* background-color: rgb(13, 13, 13); */
+    background-image: linear-gradient(to bottom, #FFD700, #FFA500);
     /* Background color of the whole page */
     display: flex;
     justify-content: center;
@@ -35,15 +49,11 @@ body {
     /* Set to relative for positioning the notch */
 }
 .notch {
-    width: 80px;
-    /* Width of the notch */
-    height: 30px;
-    /* Height of the notch */
+    width: 150px; /* Width of the notch */
+    height: 30px; /* Height of the notch */
     background-color: black;
-    border-radius: 0 0 10px 10px;
-    /* Round the bottom corners to create the notch */
-    margin: 0 auto;
-    /* Center the notch */
+    border-radius: 0 0 10px 10px; /* Round the bottom corners to create the notch */
+    margin: 0 auto; /* Center the notch */
 }
 .iphone-screen {
     background-color: #fff;
@@ -66,9 +76,10 @@ body {
     padding: 20px; /* Increase padding for better spacing */
     margin-bottom: 0; /* Remove the margin-bottom to eliminate spacing between result and buttons */
     border: none; /* Remove the border from the input field */
-    background-color: #fff; /* Set the background color of the input field */
+    background-color: whitesmoke; /* Set the background color of the input field */
     border-top-left-radius: 15px; /* Round the top left corner to match the iPhone screen */
     border-top-right-radius: 15px; /* Round the top right corner to match the iPhone screen */
+    font-family: 'Poppins', sans-serif;
 }
 .buttons {
     display: grid;
@@ -77,6 +88,7 @@ body {
     margin-top: 10px;
     /* Keep the same styles for the buttons */
     flex-grow: 1; /* Allow the buttons to fill the remaining space in the calculator */
+    font-family: 'Poppins', sans-serif;
 }
 button {
     width: 100%;
@@ -86,6 +98,7 @@ button {
     background-color: #e0e0e0;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 }
 .number {
     background-color: #f0f0f0;
@@ -98,16 +111,21 @@ button {
 }
 .operator {
     background-color: #d1d1d1;
+    font-family: 'Poppins', sans-serif;
 }
 .clear {
     background-color: #f05a5a;
+    font-family: 'Poppins', sans-serif;
 }
 .dot {
     background-color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
 }
 .percentage {
     background-color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
 }
 .equals {
     background-color: #85b6ff;
+    font-family: 'Poppins', sans-serif;
 }
