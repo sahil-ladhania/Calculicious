@@ -29,9 +29,11 @@ const updateInputScreen = () => {
 }
 
 // Creating Function For Calculating Result.
-const calculateResult = () => {
-    
-}
+const performCalculation = () => {
+    const expression  = inputFeild.join(' ');
+    const result = eval(expression);
+    return result;
+};
 
 // Logic For Showing Input On Screen.
 seven.addEventListener('click' , () => {
@@ -105,7 +107,10 @@ percentage.addEventListener('click' , () => {
 });
 // Logic For Final Result.
 equals.addEventListener('click' , () => {
-    
+    const result = performCalculation();
+    inputFeild.length = 0;
+    inputFeild.push(result);
+    updateInputScreen();
 });
 // Logic For Clearing Screen.
 clear.addEventListener('click' , () => {
